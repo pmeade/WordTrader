@@ -1,0 +1,133 @@
+﻿WordTrader Game Design Document (GDD)
+Overview
+Game Name: WordTrader
+Description: A browser-based multiplayer game built with Unity, focusing on word collection, trading, and gameplay.
+Platform: Browser (with potential for iOS and Android clients)
+Tech Stack: C#, Unity, Unity Web Player, Unknown Backend
+Hosting: Digital Ocean
+Philosophy and Goals
+Educational and Fun: Enhance vocabulary while providing an entertaining experience.
+Inclusive and Accessible: User-friendly interface for diverse age groups and linguistic backgrounds.
+Social Interaction: Encourage social connections and friendly competition.
+Fair Play: Ensure balanced game mechanics for equal opportunities.
+Innovation: Implement unique mechanics like a simulated blockchain and player-driven economy.
+Sustainability: Focus on sustainable development and community-driven funding.
+Blockchain Familiarity: Help users become comfortable with blockchain concepts through simulated interactions.
+User Experience Notes
+Account Creation and Management
+Users visit the website to create an account.
+Store only hashed passwords and hashed recovery emails.
+Password recovery via email if the hash is found.
+Support for Google and other providers if feasible.
+Social Features
+Encourage connections with friends and family through phone contacts.
+Limit the number of invites to prevent spamming.
+Players earn more invites by playing the game.
+Word Inventory
+Each player has an inventory of word tiles, resembling abstract fridge magnets.
+Players receive a random pool of words upon account creation, from which they pick their initial set.
+Simulated Blockchain and Economy
+Players interact with a simulated blockchain running simulated blockchain contracts.
+All data stored and made public as if it were a real blockchain, with potential for future real blockchain integration.
+Words are treated as NFTs and can be traded through a marketplace.
+Players earn tokens in games, which can be traded or used for decentralized consensus on game rules.
+Tokens can be exchanged for other tokens through fully collateralized token bonding curves.
+Tokens can also be exchanged for a general Word token used for higher-level decentralized consensus.
+Specialized games can create imaginary word sources used in certain games.
+Word Value and Points
+Words have point values based on their rarity and usage.
+Point values fluctuate with popularity and rarity, incentivizing finding and using obscure words.
+Gameplay
+General Gameplay Modes
+Small Groups: Most games are played in small groups of around 8 players.
+Matchmaking: Automatically assigns players to groups or allows them to create matches with their connections.
+Live Matches: Fast-paced with little time per turn, meant to be fun and repeatable.
+Async Matches: Flexible timing, allowing players to play at their own pace.
+Single Player: Tied into leaderboards and/or mining new words, making them massively multiplayer.
+Specific Game Modes
+Ghost Game Mode
+
+Inventory-Based Ghost:
+Players take turns adding a letter to a collectively spelled word.
+Rule: If the challenged player produces a valid word from their inventory, they win another copy of that word tile.
+Rule: If the challenged player cannot produce a valid word, they lose, and the challenging player wins the match and gets to steal a word tile from the bluffing player's inventory.
+Rule: If a player completes a word, other players can challenge them using the word tile. If the challenger can produce the word tile, they win the match and get another copy of the word tile. The player who played the word loses the match but gains a copy of the word in their inventory.
+Imagination-Based Ghost:
+Players spell words from their imagination by typing them out.
+Rule: If a player is challenged, they must type out the word they were intending to spell. If the challenged player types a valid word, they win the challenge. If the word is invalid, they lose the match, and the challenger wins.
+Rule: The word source is extensive, including obscure and archaic words, with plans to incorporate multiple languages. Rewards for recognizing a complete word accidentally spelled by another player go only to the challenger.
+Multilingual Games
+
+Players are presented with a word and a prompt in one language.
+Example Prompt: "[WORD] is often associated with..."
+Players respond with a word or phrase in another language that fulfills the prompt.
+Encourages learning and using words in multiple languages.
+Deck-Building and Collection
+
+Players have a small subset of words, similar to decks in a deck-building game.
+Opportunities for building and expanding word collections to use in various game modes.
+Single Player Games
+
+Madlibs:
+Players create humorous sentences using words from their inventory.
+Daily Madlibs challenge where players can submit their entries.
+Players vote on the funniest submissions.
+Winners receive rewards and their scores contribute to a leaderboard.
+Word Search:
+Players find and select words in a grid.
+Rule: Players can only pick a limited number of words, which are then added to their inventory.
+Rule: Players can continue playing to build up their inventory.
+Movie Titles:
+Players use their deck to write a quote for a poster based on a movie title prompt.
+Rule: Voting on submissions is anonymous and done in rounds.
+Exquisite Corpse:
+Players take turns responding to the previous sentence without knowing the full context.
+Crossword-like Puzzles:
+Players use their inventory or imagination to complete word puzzles.
+Rule: Solving puzzles can earn players new words for their inventory.
+User Stories
+Epic: As me, I want to publish Word Trader so I can see it succeed
+Building the Game in Unity
+Story: As a developer, I want to build the game in Unity so I can leverage its powerful game development features.
+Feature: Game Mechanics Development
+Story: As a user, I can play WordTrader on my phone so I can enjoy the game anywhere.
+Story: As a user, I can collect and trade words so I can build my vocabulary.
+Story: As a user, I can compete in real-time multiplayer matches so I can challenge my friends.
+Story: As a user, I can play asynchronous multiplayer matches so I can play at my own pace.
+Feature: User Interface Design
+Story: As a user, I can navigate an intuitive interface so I can easily understand how to play.
+Story: As a user, I can see my word inventory so I can manage my assets.
+Story: As a user, I can view leaderboards so I can track my progress.
+Designing the Games
+Story: As a game designer, I want to design engaging game modes so players can have a variety of experiences.
+Feature: Game Mode Development
+Story: As a user, I can play single-player mode so I can enjoy the game alone.
+Story: As a user, I can play multiplayer mode so I can compete with others.
+Story: As a user, I can participate in multilingual games so I can learn and use words in different languages.
+Feature: In-Game Economy Design
+Story: As a user, I can trade words in a marketplace so I can grow my collection.
+Story: As a user, I can build and customize word decks so I can strategically play in different game modes.
+Story: As a user, I can earn rewards for my achievements so I feel motivated to play.
+Story: As a user, I can vote on submissions in single-player games so I can help determine the best entries.
+Story: As a user, I can see leaderboards in single-player games so I can track my progress and compare with others.
+Implementing the Backend
+Story: As a backend developer, I want to implement a robust backend so the game can handle user data and game state efficiently.
+Feature: Authentication System
+Story: As a user, I can register an account so I can save my progress.
+Story: As a user, I can log in with social accounts so I can access the game easily.
+Feature: Game State Management
+Story: As a user, my game progress is saved so I can continue where I left off.
+Story: As a user, my word inventory is persistent so I don't lose my assets.
+Implementing the Donation-Based Servers
+Story: As a developer, I want to implement donation-based servers so the game can be funded by the community.
+Feature: Imaginary Blockchain Integration
+Story: As a user, I can donate through the simulated blockchain so I can support the game transparently.
+Story: As a user, I can track donations so I know how the game is funded.
+Feature: Server Management
+Story: As a developer, I can scale servers based on demand so the game runs smoothly.
+Story: As a user, I experience minimal downtime so I can enjoy uninterrupted gameplay.
+Community Building and Engagement
+Story: As a community manager, I want to build a strong player community so players feel connected and engaged.
+Feature: Social Features
+Story: As a user, I can add friends so I can easily play with them.
+Story: As a user, I can chat in-game

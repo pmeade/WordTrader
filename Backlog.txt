@@ -1,0 +1,46 @@
+﻿User Stories
+Epic: As me, I want to publish Word Trader so I can see it succeed
+Building the Game in Unity
+Story: As a developer, I want to build the game in Unity so I can leverage its powerful game development features.
+Feature: Game Mechanics Development
+Story: As a user, I can play WordTrader on my phone so I can enjoy the game anywhere.
+Story: As a user, I can collect and trade words so I can build my vocabulary.
+Story: As a user, I can compete in real-time multiplayer matches so I can challenge my friends.
+Story: As a user, I can play asynchronous multiplayer matches so I can play at my own pace.
+Feature: User Interface Design
+Story: As a user, I can navigate an intuitive interface so I can easily understand how to play.
+Story: As a user, I can see my word inventory so I can manage my assets.
+Story: As a user, I can view leaderboards so I can track my progress.
+Designing the Games
+Story: As a game designer, I want to design engaging game modes so players can have a variety of experiences.
+Feature: Game Mode Development
+Story: As a user, I can play single-player mode so I can enjoy the game alone.
+Story: As a user, I can play multiplayer mode so I can compete with others.
+Story: As a user, I can participate in multilingual games so I can learn and use words in different languages.
+Feature: In-Game Economy Design
+Story: As a user, I can trade words in a marketplace so I can grow my collection.
+Story: As a user, I can build and customize word decks so I can strategically play in different game modes.
+Story: As a user, I can earn rewards for my achievements so I feel motivated to play.
+Story: As a user, I can vote on submissions in single-player games so I can help determine the best entries.
+Story: As a user, I can see leaderboards in single-player games so I can track my progress and compare with others.
+Implementing the Backend
+Story: As a backend developer, I want to implement a robust backend so the game can handle user data and game state efficiently.
+Feature: Authentication System
+Story: As a user, I can register an account so I can save my progress.
+Story: As a user, I can log in with social accounts so I can access the game easily.
+Feature: Game State Management
+Story: As a user, my game progress is saved so I can continue where I left off.
+Story: As a user, my word inventory is persistent so I don't lose my assets.
+Implementing the Donation-Based Servers
+Story: As a developer, I want to implement donation-based servers so the game can be funded by the community.
+Feature: Imaginary Blockchain Integration
+Story: As a user, I can donate through the simulated blockchain so I can support the game transparently.
+Story: As a user, I can track donations so I know how the game is funded.
+Feature: Server Management
+Story: As a developer, I can scale servers based on demand so the game runs smoothly.
+Story: As a user, I experience minimal downtime so I can enjoy uninterrupted gameplay.
+Community Building and Engagement
+Story: As a community manager, I want to build a strong player community so players feel connected and engaged.
+Feature: Social Features
+Story: As a user, I can add friends so I can easily play with them.
+Story: As a user, I can chat in-game

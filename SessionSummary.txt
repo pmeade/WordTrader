@@ -1,0 +1,25 @@
+﻿# Project Overview
+- **Project Name:** Word Trader Game
+- **Description:** A Unity Web Player multiplayer game about words where players collect, trade, and use words in various game modes.
+- **Tech Stack:** C#, Unity, Unity Web Player, Unknown Backend
+
+## Key Features
+- **Authentication:** User registration and login with support for social logins.
+- **Persistence:** Users have account data including word inventory and game stats.
+- **Gameplay Modes:** Real-time multiplayer, asynchronous multiplayer, and single player.
+- **Matchmaking:** Matches players based on skill level and word inventory, supporting friend and random matches.
+- **Web Service Only Game Server:** Services manage global game state without dedicated game servers.
+- **Simulated Blockchain:** Centralized database mimics blockchain transactions for word ownership.
+- **Player Economy:** Words are assets that can be owned, traded, and used in games, with a marketplace system.
+- **Leaderboards:** Global leaderboards visible to all players.
+
+## Technical Requirements
+- **Frontend:** Developed in Unity with a responsive design for web browsers.
+- **Backend:** To be decided; must handle core functionalities like authentication and game state management.
+- **Database:** Centralized database (options: MongoDB, PostgreSQL, Firebase) for user data and transactions.
+- **Hosting:** Digital Ocean, with scalable infrastructure.
+
+## Current Progress
+- **Frontend:** 2% Complete
+
+Refer to the project documentation for detailed architecture, components, and progress updates.

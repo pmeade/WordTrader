@@ -1,0 +1,44 @@
+﻿WordTrader User Experience Notes
+
+The game runs in the browser using unity. If possible I'd like to also make iphone and android clients, but I don't
+want to spend money or enter into corporate contracts. If I have to it will be only on browser.
+
+People go to the webpage and create an account. We don't store any personal details except their hashed password and 
+hashed recovery email. If they lose their password they can enter their email and if we find its hash we will send a
+ recover email to the address. We also support google and other providers if it is reasonable to do so.
+ 
+ People are encouraged to connect to their close friends and family through their phone contacts if possible, 
+ but they are encouraged not to spam their whole address book. Perhaps we only allow people to have limited invites 
+ which will produce tighter networks of players. By playing you would earn more invites.
+ 
+ Each player has an inventory of word tiles. They are similar to fridge magnets, but more abstract and possibly rocklike.
+ 
+ On account creation players are given random pools of words that they can pick their initial set from.
+ 
+ There are games available to play.
+  
+ The first game is Ghost. In this players take turns adding a letter to a word they are collectively spelling. When
+ a player cannot think of a letter that would continue the word they challenge the previous player to prove they were 
+ spelling a real word. That player must produce a word from their inventory that could have been spelled if the game 
+ continued or they lose and the next player wins. If they produce the word they win another copy of that word. Also if
+  a player adds a letter that does form a complete word any other player with the tile of that word can
+  challenge them. If the challenger can produce the tile they win the match and win another copy of the word. The player 
+  who played the word loses the match, but also gains a copy of the word in their inventory.
+  
+  In a second form of Ghost players do not use their inventory. Instead they play entirely from their imagination
+  with the tiles words being replaced with simply typing in the word they claim they were spelling. The rewards for 
+  having your word challenged are the same, but the reward for recognizing that someone else accidently spelled a word 
+  go only to the challenger.
+  
+  The first version is played purely from peoples inventory, but in the second version there is a digitized source of 
+  words that can be used. It is designed to be as extensive as possible including obscure and archaic words. Over time
+  other words sources in many languages will be brought in.
+  
+  Games on this platform can use a subset of word sources or all of them. Games like Ghost would be hard to play in
+   multiple languages because so many words would accidently be spelled.
+   
+   Other games will involve turn based generative word play. One example is a game where players have objectives they 
+   need to convey to other players so they can collective solve a puzzle. However they can only communicate with 
+   a subset of their inventory. In this case multiple languages could mix, but the client would also show the word in
+   the configured lannguage of the app
+    

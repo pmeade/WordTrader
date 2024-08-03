@@ -1,0 +1,81 @@
+﻿# Project Documentation
+
+## Project Overview
+- **Project Name:** Word Trader Game
+- **Description:** A Unity Web Player multiplayer game about words
+- **Tech Stack:** C#, Unity, Unity Web Player, Unknown Backend
+
+## Architecture
+- **Frontend:** Unity
+- **Backend:** Unknown
+- **Database:** Unknown
+- **Hosted At:** Digital Ocean
+
+## Key Components
+- **Authentication:** User registration and login functionality.
+- **Persistence:** User's have account data that grows as they play
+- **Gameplay:** Realtime and asynchronous multiplayer amd single player word games
+- **Matchmaking:** Matches players into game sessions
+- **Web service only game server:** No dedicated game servers, just services that collectively manage global state
+- **Simulated Blockchain:** In game simulated Ethereum but just a centralized database
+- **Player Economy:** Words are things and players can own and trade them out of match
+- **Leaderboards:** Globally visible with or without an account
+
+
+## Progress
+- **Frontend:** 2% Complete
+
+# Philosophy and Goals of Word Trader Game
+
+## Philosophy
+- **Educational and Fun:** The game aims to be both entertaining and educational, helping players expand their vocabulary while enjoying the experience.
+- **Inclusive and Accessible:** Designed for a broad audience, with an intuitive interface that accommodates different age groups and linguistic backgrounds.
+- **Social Interaction:** Promotes community through multiplayer interactions, trades, and leaderboards, encouraging social connections and friendly competition.
+- **Fair Play and Balance:** Ensures fair and balanced game mechanics, providing equal opportunities for success to all players.
+- **Innovation and Creativity:** Incorporates innovative mechanics like a simulated blockchain and player-driven economy for a unique experience.
+- **Sustainability:** Focuses on sustainable development and maintenance, allowing the game to grow and evolve over time.
+
+## Top Goals
+- **Free and Without Advertising:** The game must be absolutely free to play and contain no advertising.
+- **Open Source:** The project will be fully open-sourced, encouraging community contributions and transparency.
+- **Decentralized Consensus:** Engage players in decentralized consensus mechanisms through blockchain technology.
+- **Non-Commercial:** The game will never create or generate wealth, focusing on community and engagement.
+- **Community Building:** The game should be social and aim to build rather than divide the community.
+- **Accessibility of Economic Features:** Economic features must be accessible to all players.
+- **Model for Decentralized Games:** Serve as a demonstration of how decentralized games can operate on a real blockchain.
+- **Donation-Based Server Funding:** Servers should be funded through donations, preferably through blockchain-based donations.
+
+## Additional Goals
+- **Expand Vocabulary:** Help players learn new words and improve their language skills through engaging gameplay.
+- **Engaging Gameplay:** Offer various game modes to cater to different player preferences and playstyles.
+- **Player Economy:** Develop a dynamic in-game economy where words are valuable assets that can be traded and used strategically.
+- **Community Building:** Implement features that promote social interaction, such as friend systems, in-game chat, and collaborative challenges.
+- **Innovative Features:** Integrate unique elements like a simulated blockchain for word transactions and a web service-based game server.
+- **Scalable Architecture:** Build a technical infrastructure that can handle growth and adapt to increasing player numbers and evolving features.
+- **User-Centric Design:** Prioritize user experience, making the game enjoyable, intuitive, and rewarding for players.
+
+# Project Overview
+- **Project Name:** Word Trader Game
+- **Description:** A Unity Web Player multiplayer game about words where players collect, trade, and use words in various game modes.
+- **Tech Stack:** C#, Unity, Unity Web Player, Unknown Backend
+
+## Key Features
+- **Authentication:** User registration and login with support for social logins.
+- **Persistence:** Users have account data including word inventory and game stats.
+- **Gameplay Modes:** Real-time multiplayer, asynchronous multiplayer, and single player.
+- **Matchmaking:** Matches players based on skill level and word inventory, supporting friend and random matches.
+- **Web Service Only Game Server:** Services manage global game state without dedicated game servers.
+- **Simulated Blockchain:** Centralized database mimics blockchain transactions for word ownership.
+- **Player Economy:** Words are assets that can be owned, traded, and used in games, with a marketplace system.
+- **Leaderboards:** Global leaderboards visible to all players.
+
+## Technical Requirements
+- **Frontend:** Developed in Unity with a responsive design for web browsers.
+- **Backend:** To be decided; must handle core functionalities like authentication and game state management.
+- **Database:** Centralized database (options: MongoDB, PostgreSQL, Firebase) for user data and transactions.
+- **Hosting:** Digital Ocean, with scalable infrastructure.
+
+## Current Progress
+- **Frontend:** 2% Complete
+
+Refer to the project documentation for detailed architecture, components, and progress updates.
