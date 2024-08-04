@@ -1,39 +1,43 @@
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
+/// <summary>
+/// Manages the creation and adjustment of UI panels.
+/// </summary>
 public class PanelManager : MonoBehaviour
 {
-    // Reference to the Panel prefab
     public GameObject panelPrefab;
-
-    // Reference to the UI container (e.g., a Canvas or a Panel)
     public Transform uiContainer;
 
-    // Method to create a new Panel with Text
+    /// <summary>
+    /// Creates a new panel with specified text and word class.
+    /// </summary>
+    /// <param name="newText">The text for the new panel.</param>
+    /// <param name="wordClass">The word class of the panel.</param>
+    /// <returns>The created panel GameObject.</returns>
     public GameObject CreatePanel(string newText, EWordClass wordClass)
     {
-        // Instantiate the Panel prefab
         GameObject newPanel = Instantiate(panelPrefab, uiContainer);
 
         MagnetObject magnet = newPanel.GetComponent<MagnetObject>();
         magnet.SetWord(newText, wordClass);
 
-        // Adjust the width of the panel based on the text length
-        AdjustPanelWidth(newPanel, magnet, newText);
+        AdjustPanelWidth(newPanel, magnet);
 
         return newPanel;
     }
 
-    // Method to adjust the width of the Panel based on the Text length
-    private void AdjustPanelWidth(GameObject panel, MagnetObject magnet, string newText)
+    /// <summary>
+    /// Adjusts the width of the panel based on text length.
+    /// </summary>
+    /// <param name="panel">The panel GameObject.</param>
+    /// <param name="magnet">The MagnetObject component.</param>
+    private void AdjustPanelWidth(GameObject panel, MagnetObject magnet)
     {
         RectTransform panelRectTransform = panel.GetComponent<RectTransform>();
         if (panelRectTransform != null)
         {
-            // Set the width of the panel based on the preferred width of the text
             panelRectTransform.sizeDelta = new Vector2(magnet.PreferredWidth(), panelRectTransform.sizeDelta.y);
-            // Adjust 20 as padding or any other value that suits your design
         }
         else
         {
@@ -41,7 +45,11 @@ public class PanelManager : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Clears all panels (placeholder).
+    /// </summary>
     public void ClearPanels()
     {
+        // Implement panel clearing logic if needed
     }
 }

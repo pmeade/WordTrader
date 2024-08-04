@@ -14,12 +14,17 @@ public class GhostGameUI : MonoBehaviour
 
     private GhostGameController _gameController;
     private List<GameObject> _playerWidgets;
+    private GhostGameLogic _gameLogic;
+    private PanelManager _panelManager;
 
     private void Start()
     {
         _gameController = FindObjectOfType<GhostGameController>();
         _gameController.Initialize(4); // Example with 4 players
         _playerWidgets = new List<GameObject>();
+        _gameLogic = GetComponent<GhostGameLogic>();
+        _panelManager = GetComponent<PanelManager>();
+
         InitializePlayerWidgets(4);
         UpdateUI();
     }

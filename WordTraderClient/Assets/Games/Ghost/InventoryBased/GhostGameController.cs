@@ -5,11 +5,14 @@ public class GhostGameController : MonoBehaviour
 {
     private GhostGameLogic _gameLogic;
     private NetworkService _networkService;
+    private PanelManager _panelManager;
 
     public void Initialize(int totalPlayers)
     {
         _gameLogic = new GhostGameLogic(totalPlayers);
         _networkService = FindObjectOfType<NetworkService>();
+        _panelManager = GetComponent<PanelManager>();
+
     }
 
     public string GetCurrentWord()

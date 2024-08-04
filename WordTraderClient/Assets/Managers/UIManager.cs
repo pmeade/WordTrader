@@ -1,8 +1,15 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour
 {
     public static UIManager Instance { get; private set; }
+
+    [Header("UI Panels")]
+    public GameObject mainMenuPanel;
+    public GameObject inventoryPanel;
+    public GameObject settingsPanel;
+    public GameObject hudPanel;
 
     private void Awake()
     {
@@ -17,14 +24,41 @@ public class UIManager : MonoBehaviour
         }
     }
 
+    private void Start()
+    {
+        ShowMainMenu();
+    }
+
+    public void ShowMainMenu()
+    {
+        mainMenuPanel.SetActive(true);
+        inventoryPanel.SetActive(false);
+        settingsPanel.SetActive(false);
+        hudPanel.SetActive(false);
+    }
+
     public void ShowInventory()
     {
-        // Show inventory UI logic
+        mainMenuPanel.SetActive(false);
+        inventoryPanel.SetActive(true);
+        settingsPanel.SetActive(false);
+        hudPanel.SetActive(false);
     }
 
     public void ShowSettings()
     {
-        // Show settings UI logic
+        mainMenuPanel.SetActive(false);
+        inventoryPanel.SetActive(false);
+        settingsPanel.SetActive(true);
+        hudPanel.SetActive(false);
+    }
+
+    public void ShowHUD()
+    {
+        mainMenuPanel.SetActive(false);
+        inventoryPanel.SetActive(false);
+        settingsPanel.SetActive(false);
+        hudPanel.SetActive(true);
     }
 
     public void UpdateHUD()
